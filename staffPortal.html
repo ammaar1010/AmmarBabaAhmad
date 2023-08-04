@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="schoolproj.css">
+        <title>Student portal page</title>
+        <script src="schoolproj.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Starlight Academy</h1>
+           
+
+            <nav>
+                <ul>
+                    <li><a href="schoolproject.html">home</a> </li>
+                    <li><a href="registration.html">register</a></li>
+                    <li><a href="studentPortal.html">portal</a></li>
+                    <li><a href="staffPortal.html">staff</a></li>
+                    <li><a href="aboutUs.html">about us</a></li>
+                    <li><a href="contact us.html">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form method="get" action="schoolproject.html"  id="staffSignUpForm" onsubmit="return(validate())" name="form">
+    <fieldset id="StaffFieldset">
+        <legend>Staff Sign up</legend>
+        <!-- <label for="text1" >Student First Name</label> -->
+        <input type="text" id="stafftext1" class="staffforminput" placeholder="Student First Name">
+
+        <input type="password" id="staffPassword" name="password" class="staffforminput" placeholder="Show PassWord" onkeyup="matchedPasswords()">
+           
+        <input type="checkbox" id="showpassword" onclick="showstaffPassword()">
+        <label for="showpassword" class="staffLabels">show password</label><br>
+
+        <input type="submit" value="Submit Form" id="studentFormSubmit">
+
+    </fieldset>
+</form>
+
+       <footer>
+            <div id="footdown">
+        
+               <div id="downleft"> 
+                <input type="email" placeholder="Enter Email for newsletter" id="emailBox"><button id="searchbtn" onclick="SignUp()">Sign Up</button>
+                <p id="footerP">Starlight Academy</p>
+            </div>
+                <div id="downright"> 
+                    
+                  
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
